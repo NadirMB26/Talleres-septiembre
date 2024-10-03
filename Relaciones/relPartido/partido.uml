@@ -1,0 +1,13 @@
+@startuml
+class Jugador{
+    -String nombre
+    -Equipo equipo
+}
+
+class equipo{
+    -List<Jugador> jugadores
+}
+
+Equipo "1" -- "*" jugador
+
+@enduml

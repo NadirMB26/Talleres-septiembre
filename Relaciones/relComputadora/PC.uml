@@ -1,0 +1,10 @@
+@startuml
+class Computadora{
+    - Procesador Procesador
+}
+class Procesador{
+    - String modelo
+}
+
+Procesador "1"-- "1" Casa
+@enduml

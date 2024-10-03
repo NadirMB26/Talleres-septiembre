@@ -1,0 +1,14 @@
+@startuml
+class Coche{
+    - List<Rueda> ruedas;
+    + agregarRueda
+    + Rueda buscarRueda
+}
+
+class Rueda{
+    - marca
+    + String getMarca
+}
+
+Coche "1" -- "4" Rueda : "tiene"
+@enduml

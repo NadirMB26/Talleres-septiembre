@@ -1,0 +1,10 @@
+@startuml
+class Casa{
+    - Puerta puerta
+}
+class Puerta{
+    - String color
+}
+
+Puerta "1"-- "1" Casa
+@enduml
